@@ -1,16 +1,18 @@
-#include <math.h>#include <math.h>
+#include <math.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <assert.h>
 #include <limits.h>
 #include <stdbool.h>
+//Calculate and print the sum of the elements in an array, keeping in mind that some 
+//of those integers may be quite large.
 
-
-
+//function that will sum up large numbers
  long long int sum_array(  long long int arr[],  int n)
     {
     int i ;
+    //32-bit integers initionalization
      long long int sum=0;
     for (i = 0; i < n; i++)
         {
@@ -18,7 +20,9 @@
     }
     return(sum);
 }
-
+//use test case 
+//5
+//1000000001 1000000002 1000000003 1000000004 1000000005
 int main(){
     int n; //declaring varable to hold size of array
     scanf("%d",&n); //receving input for size of array
@@ -31,6 +35,7 @@ int main(){
     printf("%lli\n", sum);
     return 0;
 }
+
 
 
 
