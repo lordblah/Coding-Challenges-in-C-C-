@@ -28,15 +28,18 @@ using namespace std;
 int main() {
     int x, y = 0;
     int amount_moves= 0;
+    //Input Format 
+    //The first line contains 5 space-separated integers denoting the current slot configuration. 
+    //The second line contains 5 space-separated integers denoting the desired slot configuration
     int n = 5;
     int current_config[n];
     int desired_config[n];
-    
+    //loop though current configuration and gater data
     for(int i=0; i < n; i++)
         {
         scanf("%d", &current_config[i]);
     }
-    
+     //loop though desired configuration and gater data
     for(int i=0; i < n; i++)
         {
         scanf("%d", &desired_config[i]);
@@ -54,6 +57,7 @@ int main() {
              amount_moves = y + amount_moves;
         }
     }
+    //Print a single integer denoting the minimum number of moves to change this configuration to the correct one.
         printf("%d", amount_moves);
    
     
